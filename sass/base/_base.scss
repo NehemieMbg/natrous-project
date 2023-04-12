@@ -14,3 +14,11 @@ body {
   /* Change the box model so the border is not added to the total height or width of a box */
   box-sizing: border-box;
 }
+
+ul {
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+}
