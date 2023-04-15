@@ -12,9 +12,13 @@
     background-color: rgba($color-white, 0.5);
     border: none;
     border-bottom: 0.3rem solid transparent;
-    width: 65%;
+    width: 90%;
     display: block;
     transition: all 0.5s;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
 
     &:focus {
       outline: none;
@@ -28,6 +32,10 @@
 
     &::-webkit-input-placeholder {
       color: $color-grey-dark-2;
+    }
+
+    @include respond(tab-land) {
+      width: 50%;
     }
   }
 
@@ -49,6 +57,11 @@
   &__radio-group {
     width: 39%;
     display: inline-block;
+
+    @include respond(tab-port) {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
   }
 
   &__radio-input {
